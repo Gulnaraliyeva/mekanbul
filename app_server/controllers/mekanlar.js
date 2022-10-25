@@ -13,7 +13,7 @@ const anaSayfa= function(req, res, next){
             "ad":"Starbucks",
             "puan":"4",
             "adres":"SDÜ AVM",
-            "imkanlar":["Kahve","Pasta"],
+            "imkanlar":["Kahve", "Pasta"],
             "mesafe":"1km"
         },
         {
@@ -31,40 +31,50 @@ const anaSayfa= function(req, res, next){
 
 const mekanBilgisi=function(req, res){
     res.render('mekanbilgisi',
-    {"baslik":"Mekan Bilgisi",
-    "mekanBaslik":"Starbucks",
-    "mekanDetay":{
-        "ad":"Starbucks",
-        "puan":"4",
-        "adres":"SDÜ AVM",
-        "saatler":[
+      {
+        "baslik":"Mekan Bilgisi",
+        "mekanBaslik":"Starbucks",
+        "mekanDetay": {
+          "ad": "Starbucks",
+          "adres": "SDÜ AVM",
+          "puan": "4",
+          "imkanlar": ["Kahve", "Pasta"],
+          "koordinatlar": {
+            "enlem": "37.7",
+            "boylam": "30.5"
+          },
+          "saatler": [
             {
-            "gunler":"Pazartesi-Cuma",
-            "acilis":"9:00-23:00",
-            "kapali":"false"
+              "gunler":"Pazartesi-Cuma",
+              "acilis": "9:00",
+              "kapanis": "23:00",
+              "kapali": false
             },
             {
-                "gunler":"Cumartesi-Pazar",
-                "acilis":"8:00-22:00",
-                "kapali":"false"
+              "gunler":"Cumartesi-Pazar",
+              "acilis": "10:00",
+              "kapanis": "22:00",
+               "kapali": false
             },
-        ],
-                "imkanlar":["Kahve","Pasta"],
-                "kordinatlar":{
-                    "enlem":"37.7",
-                    "boylam":"30.5"
-                },
-                "yorumlar":[
-                  {
-                    "yprumYapan":"Gulnar Aliyeva",
-                    "yorumMetni":"Kahveler güzel",
-                    "tarih":"20 Ekim",
-                    "puan":"4"
-                  }
-                ]
+         ],
+          "yorumlar": [
+            {
+              "yorumYapan": "Gulnar Aliyeva",
+              "yorumMetni": "Kahveler güzel",
+              "tarih": "20 Ekim 2022",
+              "puan": "4"
+            },
+            {
+              "yorumYapan": "Gulnar Aliyeva",
+              "puan": "3",
+              "tarih": "20 Ekim 2022",
+              "yorumMetni": "İyi"
+            }
 
-    }
-    })
+         ]
+
+       }
+      });
 }
 const yorumEkle= function(req, res){
     res.render('yorumekle',{"title":"Yorum Sayfası"});
