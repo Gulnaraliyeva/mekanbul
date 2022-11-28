@@ -5,3 +5,7 @@
 ![](resimler/mekanlistele.png)
 [3. Bir mekana ait bir yorumu getir:](https://mekanbul5.gulnaraliyeva.repl.co/api/mekanlar/637c6be9d510b966d090b8db/yorumlar/637c6c107ed120999d91a24f)
 ![](resimler/yorumgetir.png)
+# API Test
+![](resimler/API%20Test.png)
+# API COLLECTIONS TEST
+![](resimler/API%20COLLECTIONS%20TEST.png)
