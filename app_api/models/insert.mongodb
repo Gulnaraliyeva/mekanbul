@@ -2,8 +2,8 @@ const database = 'mekanbul';
 use(database);
 db.mekanlar.insertOne(
 {
-  "ad": "Starbucks",
-  "adres": "Centrum Garden",
+  "ad": "Çikolata evim",
+  "adres": "Modernevler",
   "puan": 5,
   "imkanlar": [
     "çay",
