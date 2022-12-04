@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const axios = require('axios');
+const axios = require("axios");
 var apiSecenekleri={
   sunucu:"https://mekanbul5.gulnaraliyeva.repl.co",
   apiYolu:"/api/mekanlar/",
