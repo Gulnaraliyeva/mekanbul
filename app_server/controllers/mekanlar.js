@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 const axios=require("axios");
 var apiSecenekleri={
-  sunucu:"https://mekanbul5.gulnaraliyeva.repl.co",
-  apiYolu:"/api/mekanlar/"
-}
+  sunucu:"http://localhost:3000",
+  apiYolu:"/api/mekanlar/",
+};
 var mesafeyiFormatla=function(mesafe){
 var yeniMesafe,birim;
 if(mesafe>1){
